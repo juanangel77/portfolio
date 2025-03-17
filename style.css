@@ -1,71 +1,65 @@
+/* Mode sombre */
 body {
-    font-family: Arial, sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Courier New', monospace;
     margin: 0;
     padding: 0;
     text-align: center;
 }
+
+/* Header */
 header {
-    background-color: #333;
-    color: white;
+    background-color: #161b22;
     padding: 20px;
-}
-section {
-    margin: 20px;
-}
-footer {
-    background-color: #222;
-    color: white;
-    padding: 10px;
-}
-#projets {
-    text-align: center;
-    padding: 20px;
-}
-.projet {
-    display: inline-block;
-    width: 300px;
-    margin: 10px;
-}
-.projet img {
-    width: 100%;
-    border-radius: 10px;
-}
-#contact {
-    text-align: center;
-    padding: 20px;
-}
-form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin: auto;
-}
-input, textarea {
-    margin: 10px 0;
-    padding: 10px;
-    width: 100%;
-}
-button {
-    background: #333;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-}
-button:hover {
-    background: #555;
-}
-h1, h2 {
-    opacity: 0;
-    animation: apparition 2s forwards;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-@keyframes apparition {
+/* Sections */
+section {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+/* Liens */
+a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Boutons */
+button {
+    background-color: #238636;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2ea043;
+}
+@keyframes typing {
     from {
-        opacity: 0;
-        transform: translateY(-20px);
+        width: 0;
     }
     to {
-        opacity: 1;
-        transform: translateY(0);
+        width: 100%;
     }
+}
+
+h1 {
+    display: inline-block;
+    border-right: 3px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 3s steps(30, end) forwards;
 }
