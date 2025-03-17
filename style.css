@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+section {
+    margin: 20px;
+}
+footer {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+}
+#projets {
+    text-align: center;
+    padding: 20px;
+}
+.projet {
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+}
+.projet img {
+    width: 100%;
+    border-radius: 10px;
+}
+#contact {
+    text-align: center;
+    padding: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+button {
+    background: #333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background: #555;
+}
+h1, h2 {
+    opacity: 0;
+    animation: apparition 2s forwards;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
