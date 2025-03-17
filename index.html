@@ -3,49 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Cybersécurité</title>
+    <title>Portfolio | Étudiant en Cybersécurité</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- 🌍 Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#github">GitHub</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 🏆 En-tête -->
     <header>
         <h1>👨‍💻 Étudiant en Cybersécurité</h1>
         <p>Passionné par la sécurité informatique et la protection des systèmes.</p>
     </header>
 
-    <section id="about">
-        <h2>À propos de moi</h2>
-        <p>Je suis étudiant en cybersécurité, spécialisé en tests d’intrusion et analyse des menaces.</p>
-    </section>
+    <main>
+        <!-- 👤 À propos -->
+        <section id="about">
+            <h2>À propos de moi</h2>
+            <p>Je suis étudiant en cybersécurité, spécialisé en tests d’intrusion et analyse des menaces.</p>
+        </section>
 
-    <section id="projects">
-        <h2>Projets en Cybersécurité</h2>
-        <div class="projet">
-            <h3>🔍 Analyse de Vulnérabilités</h3>
-            <p>Utilisation de Nessus et OpenVAS pour détecter des failles.</p>
-        </div>
-        <div class="projet">
-            <h3>🚀 Capture The Flag (CTF)</h3>
-            <p>Participation à des challenges de hacking éthique.</p>
-        </div>
-        <div class="projet">
-            <h3>🛠 Développement d’un outil de pentest</h3>
-            <p>Création d’un script Python automatisant certaines attaques.</p>
-        </div>
-    </section>
-    </a>
-</section>
-<section id="cv">
-    <h2>Mon CV</h2>
-    <p>Vous pouvez télécharger mon CV en cliquant sur le bouton ci-dessous :</p>
-    <a href="assets/CV_MBA_JUAN.pdf" download target="_blank">
-        <button>Télécharger mon CV 📄</button>
-    </a>
-</section>
+        <!-- 🔥 Projets en cybersécurité -->
+        <section id="projects">
+            <h2>Projets en Cybersécurité</h2>
+            <div class="project">
+                <h3>🔍 Analyse de Vulnérabilités</h3>
+                <p>Utilisation de Nessus et OpenVAS pour détecter des failles.</p>
+            </div>
+            <div class="project">
+                <h3>🚀 Capture The Flag (CTF)</h3>
+                <p>Participation à des challenges de hacking éthique.</p>
+            </div>
+            <div class="project">
+                <h3>🛠 Développement d’un outil de pentest</h3>
+                <p>Création d’un script Python automatisant certaines attaques.</p>
+            </div>
+        </section>
+
+        <!-- 📄 CV -->
+        <section id="cv">
+            <h2>Mon CV</h2>
+            <p>Vous pouvez télécharger mon CV en cliquant sur le bouton ci-dessous :</p>
+            <a href="assets/CV_MBA_JUAN.pdf" download target="_blank">
+                <button class="btn">📄 Télécharger mon CV</button>
+            </a>
+        </section>
+
+        <!-- 🖥️ GitHub -->
+        <section id="github">
+            <h2>Mes Projets GitHub</h2>
+            <p>Retrouvez mes scripts et outils de cybersécurité sur GitHub.</p>
+            <a href="https://github.com/juanangel77" target="_blank">
+                <button class="btn">🚀 Voir mon GitHub</button>
+            </a>
+        </section>
+
+        <!-- ✉️ Contact -->
+        <section id="contact">
+            <h2>Me Contacter</h2>
+            <form action="https://formspree.io/f/ton-email" method="POST">
+                <input type="text" name="name" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+                <textarea name="message" placeholder="Votre message" required></textarea>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- 🔗 Pied de page -->
+    <footer>
+        <p>© 2024 - Portfolio | Étudiant en Cybersécurité</p>
+    </footer>
 
 </body>
 </html>
-<section id="github">
-    <h2>Mes Projets GitHub</h2>
-    <p>Retrouvez mes scripts et outils de cybersécurité sur GitHub.</p>
-    <a href="https://github.com/juanangel77" target="_blank">
-        <button>Voir mon GitHub</button>
