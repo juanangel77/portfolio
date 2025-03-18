@@ -6,6 +6,120 @@
     <title>Portfolio | Cybersécurité</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8; /* léger gris bleu */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #003366; /* bleu foncé */
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.2rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+        nav {
+            background-color: #00559b; /* bleu plus clair */
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 40px 10%;
+        }
+        section {
+            margin-bottom: 40px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #003366;
+        }
+        section p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+        .btn {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0055a5;
+        }
+        .project {
+            display: flex;
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .project img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .project h3 {
+            font-size: 1.5rem;
+            color: #003366;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form textarea {
+            resize: vertical;
+            height: 150px;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
 
@@ -22,17 +136,16 @@
 
     <!-- 🏆 En-tête -->
     <header>
-        <img src="cyber-security-icon-illustration-cyber-security-crime-protection-hacker-infographic-template-presentation-concept-banner-pictogram-icon-set-icons-vector.jpg" alt="Bannière Cybersécurité">
-        <h1>👨‍💻 Étudiant en Cybersécurité</h1>
-        <p>Spécialisé en tests d’intrusion, analyse des menaces et défense des systèmes.</p>
+        <h1>Cybersécurité</h1>
+        <p>Étudiant en cybersécurité et passionné par la protection des systèmes.</p>
     </header>
 
     <main>
         <!-- 👤 À propos -->
         <section id="about">
-            <h2>À propos de moi</h2>
-            <p>Je suis passionné par la cybersécurité et la protection des systèmes informatiques.</p>
-            <p>Mon objectif est de devenir expert en sécurité offensive et aider les entreprises à sécuriser leurs infrastructures.</p>
+            <h2>À propos</h2>
+            <p>Je suis étudiant en Bachelor 2 de Cybersécurité, avec un intérêt particulier pour les tests d'intrusion et la défense des systèmes.</p>
+            <p>Je m'efforce de rester discret et respectueux des pratiques éthiques dans le domaine de la cybersécurité, tout en cherchant à acquérir une expertise dans ce domaine passionnant.</p>
         </section>
 
         <!-- 🚀 Projets en cybersécurité -->
@@ -43,11 +156,10 @@
                 <img src="jefferson-santos-9SoCnyQmkzI-unsplash.jpg" alt="Analyse de Vulnérabilités">
                 <div>
                     <h3>🔍 Analyse de Vulnérabilités</h3>
-                    <p>Scan et audit de systèmes avec <strong>Nessus</strong> et <strong>OpenVAS</strong>.</p>
+                    <p>Audit de systèmes avec <strong>Nessus</strong> et <strong>OpenVAS</strong>.</p>
                     <ul>
                         <li>📌 Détection des failles dans les réseaux et applications.</li>
                         <li>📌 Analyse des CVE et recommandations de correctifs.</li>
-                        <li>📌 Génération de rapports de vulnérabilités.</li>
                     </ul>
                 </div>
             </div>
@@ -56,11 +168,9 @@
                 <img src="CaptureTheFlag.png" alt="Capture The Flag">
                 <div>
                     <h3>🚀 Capture The Flag (CTF)</h3>
-                    <p>Participation à des challenges de cybersécurité sur <strong>HackTheBox</strong> et <strong>TryHackMe</strong>.</p>
+                    <p>Participation à des challenges sur <strong>HackTheBox</strong> et <strong>TryHackMe</strong>.</p>
                     <ul>
-                        <li>🔹 Exploitation de failles Web (SQL Injection, XSS).</li>
-                        <li>🔹 Reverse Engineering et Analyse de Malware.</li>
-                        <li>🔹 Décryptage et forensics.</li>
+                        <li>🔹 Exploitation de failles Web et reverse engineering.</li>
                     </ul>
                 </div>
             </div>
@@ -69,14 +179,13 @@
                 <img src="Quand-pentest-2.jpg" alt="Développement d’un outil de pentest">
                 <div>
                     <h3>🛠 Développement d’un outil de pentest</h3>
-                    <p>Création d’un script Python pour automatiser certaines attaques :</p>
+                    <p>Création d’un script Python pour automatiser certaines attaques de pénétration.</p>
                     <ul>
-                        <li>✅ Bruteforce SSH avec gestion d’erreurs.</li>
-                        <li>✅ Scan de ports avec Nmap intégré.</li>
-                        <li>✅ Automatisation de la reconnaissance réseau.</li>
+                        <li>✅ Bruteforce SSH et scan de ports avec Nmap.</li>
                     </ul>
                 </div>
             </div>
+
         </section>
 
         <!-- 📄 CV -->
@@ -91,7 +200,7 @@
         <!-- 🖥️ GitHub -->
         <section id="github">
             <h2>Mes Projets GitHub</h2>
-            <p>Découvrez mes outils et scripts de cybersécurité sur mon GitHub.</p>
+            <p>Découvrez mes outils et scripts sur GitHub.</p>
             <a href="https://github.com/juanangel77" target="_blank">
                 <button class="btn">🚀 Voir mon GitHub</button>
             </a>
@@ -100,7 +209,8 @@
         <!-- ✉️ Contact -->
         <section id="contact">
             <h2>Me Contacter</h2>
-            <form action="https://formspree.io/f/ton-email" method="POST">
+            <p>Pour toute demande professionnelle ou collaboration, veuillez me contacter :</p>
+            <form class="contact-form" action="https://formspree.io/f/ton-email" method="POST">
                 <input type="text" name="name" placeholder="Votre nom" required>
                 <input type="email" name="email" placeholder="Votre email" required>
                 <textarea name="message" placeholder="Votre message" required></textarea>
